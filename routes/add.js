@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
     const course = new Course({
         title: req.body.title,
         price: req.body.price,
-        imgUrl: req.body.imgUrlб,
+        imgUrl: req.body.imgUrl,
         userId: req.user//Посоклько в модели описываем как ObjectID, такая запись возможна, mongoose делает это за нас
     })
     try {

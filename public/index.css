@@ -62,3 +62,12 @@
 .login-form{
     padding-top: 6rem;
 }
+
+.alert{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: rgba(255,0,0,.3);
+    color:red;
+}

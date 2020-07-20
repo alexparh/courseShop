@@ -1,6 +1,8 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const path = require('path')
+const csurf = require('csurf')
+const flash = require('connect-flash')
 const handlebars = require('handlebars')
 const exphbs = require('express-handlebars')
 const session = require('express-session')
@@ -12,7 +14,6 @@ const orderRoutes = require('./routes/orders')
 const cardRoutes = require('./routes/card')
 const authRoutes = require('./routes/auth')
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
-const User = require('./models/user')
 const varMiddleware = require('./middleware/variables')
 const userMiddleware = require('./middleware/user')
 
@@ -45,6 +46,8 @@ app.use(session({
     saveUninitialized: false,
     store
 }))
+app.use(csurf())
+app.use(flash())
 app.use(varMiddleware)
 app.use(userMiddleware)
 

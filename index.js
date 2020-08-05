@@ -19,7 +19,6 @@ const userMiddleware = require('./middleware/user')
 const errorHandler = require('./middleware/error')
 const keys = require('./keys')
 
-const MONGODB_URI = 'mongodb+srv://parhom420:Ph3g6MPYMvuPA6D@cluster0.vcvrj.mongodb.net/shopDB'
 const app = express()
 //Создание и конфиг хэндэлбарс
  const hbs = exphbs.create({

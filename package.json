@@ -12,6 +12,7 @@
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",
     "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
     "connect-flash": "^0.1.1",
     "connect-mongodb-session": "^2.3.3",
     "csurf": "^1.11.0",
@@ -22,7 +23,8 @@
     "helmet": "^3.23.3",
     "i": "^0.3.6",
     "mongoose": "^5.9.22",
-    "npm": "^6.14.6",
+    "multer": "^1.4.2",
+    "npm": "^6.14.7",
     "uuid": "^8.2.0",
     "uuidv4": "^6.1.1"
   },
